@@ -1,13 +1,39 @@
-<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pratham Pachapur | Mechatronics & Robotics Portfolio</title>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pratham Pachapur | Mechatronics &amp; Robotics Portfolio</title>
 <meta name="description" content="Pratham Pachapur: Mechatronics student at NMIMS MPSTME Mumbai building robots, IoT systems and product designs. Aviation enthusiast.">
-<meta property="og:title" content="Pratham Pachapur | Building ideas. Automating solutions."><meta property="og:description" content="Robotics, IoT, CAD & product design portfolio."><meta property="og:type" content="website"><meta property="og:image" content="assets/og.png">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"></head><body>
-<nav><div class="wrap"><b>PP</b><ul><li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#goals">Goals</a></li><li><a href="#contact">Contact</a></li></ul><button id="theme" aria-label="Toggle light/dark theme">◐</button></div></nav>
-<main><header id="home" class="hero"></header><section id="about"></section><section id="projects"></section><section id="experience"></section><section id="skills"></section><section id="goals"></section><section id="aviation"></section><section id="contact"></section></main>
-<footer>Built with curiosity · © Pratham Pachapur</footer>
-<dialog id="dlg"><div id="dlgbody"></div><button id="close" class="btn" style="margin-top:14px;background:none">Close</button></dialog>
-<script src="data.js"></script><script src="main.js"></script></body></html>
+<meta property="og:title" content="Pratham Pachapur | Building ideas. Automating solutions.">
+<meta property="og:description" content="Robotics, IoT, CAD and product design portfolio.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a1020'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' font-weight='700' text-anchor='middle' fill='%2367e8f9'%3EPP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=JetBrains+Mono&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b16;--panel:#0e1526;--line:#1e2a45;--tx:#e6ecf7;--mut:#94a3bd;--ac:#3B82F6;--cy:#67e8f9;--grid:rgba(59,130,246,.08)}
+:root[data-theme="light"]{--bg:#f4f7fc;--panel:#ffffff;--line:#cfd9ea;--tx:#0d1730;--mut:#4a5a78;--ac:#1d5fd6;--cy:#0e7490;--grid:rgba(29,95,214,.09)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background-color:var(--bg);color:var(--tx);font:16px/1.6 Inter,system-ui,sans-serif;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.15;margin:0}
+a{color:var(--cy)}
+:focus-visible{outline:2px solid var(--cy);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:80px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:26px}
+h3{font-size:1.1rem}
+.mono,.tag,.label{font-family:'JetBrains Mono',monospace;font-size:.78rem}
+.label{color:var(--cy);display:block;margin-bottom:6px}
+.mut{color:var(--mut)}
+nav{position:sticky;top:0;z-index:20;background:rgba(7,11,22,.8);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+:root[data-theme="light"] nav{background:rgba(244,247,252,.85)}
+nav .wrap{display:flex;align-items:center;gap:14px;height:56px}
+nav b{font-family:'JetBrains Mono',monospace;color:var(--cy)}
+nav ul{display:flex;gap:16px;list-style:none;margin:0 0 0 auto;padding:0;overflow-x:auto}
+nav li a{color:var(--mut);text-decoration:none;font-size:.9rem;white-space:nowrap}
+nav li a:hover{color:var(--tx)}
+#theme{background:none;border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:6px 10px;cursor:pointer}
+.hero{min-height:86vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:60px 0 120px}
